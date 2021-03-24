@@ -4,7 +4,8 @@ Linear Regression is a statistical supervised learning technique to predict the 
 The aim of this project is to build linear regression model for different scenarios like:
 * One-dimensional problem without intercept
 * One-dimensional problem with intercept
-* Multi-dimensional problem \
+* Multi-dimensional problem
+
 For the first experiment Turkish stock exchange data is used in which the data organized with regard to working days in Istanbul Stock Exchange.For the next two experiments MT cars data issued which describes the model using a set of variables like displacement, weight, power and miles per gallon(mpg). One dimensional linear regression problem is simple linear regression which helps to find the linear relationship between two continuous variables, one independent and one dependent feature.
 ## Installation and Running Procedure
 This program requires a working MATLAB installation.
