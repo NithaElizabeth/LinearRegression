@@ -7,6 +7,15 @@ The aim of this project is to build linear regression model for different scenar
 * Multi-dimensional problem
 
 For the first experiment Turkish stock exchange data is used in which the data organized with regard to working days in Istanbul Stock Exchange.For the next two experiments MT cars data issued which describes the model using a set of variables like displacement, weight, power and miles per gallon(mpg). One dimensional linear regression problem is simple linear regression which helps to find the linear relationship between two continuous variables, one independent and one dependent feature.
+## Result
+The regressionModel_1D(data) function will fit a linear regression model for 1D problem and it returns the slope. From the main script, this slope is then passed to the plotModel(data,w1,w0,out,task) function along with other values like values for intercept(here = 0), out(this value remains 0 for all cases other than task 2.4) and task(here =1). This function is used for plotting the 1D linear regression model with the computed slope and is shown in Figure below.
+
+The main script compares graphically the solution obtained for 1D model, on different random subsets (10%) of the whole data set.The model is again plotted using the plotModel(data,w1,w0,out,task) function.This is depicted in the following Figure.
+
+The main script then invokes the function for fitting a 1D model with intercept.This is performed on the MT cars data. At this task, the columns other than "mpg" and "weight" is neglected to create a 1D dataset.After preparing the data, it passed to the function regressionModelintercept_1D(data) which fits the model and returns the slope and intercept to the main script. Plotting for "mpg" as y ad "weight" as x is done using plotModel(data,w1,w0,out,task) function. This plot is shown in the next Figure.
+
+The desired valued is compared with the actual value and they are both plotted as shown in Figure given below. (The targeted and predicted outputs are plotted in dotted lines for the purpose of comparison). This plot depicts the fitted linear regression model for Multi-Dimensional problem.The blue shows the desired output and red shows the predicted output.
+
 ## Installation and Running Procedure
 This program requires a working MATLAB installation.
 To run this program clone this repository into your workspace
